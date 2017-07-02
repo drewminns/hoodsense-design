@@ -1,0 +1,63 @@
+.tag {
+  display: inline-block;
+  background: $background;
+  color: $text;
+  font-family: $fontface;
+  font-size: $smallpx;
+  padding: .4em 1em .6em;
+  border-radius: 4em;
+  border: 1px solid transparent;
+  margin-bottom: .3em;
+  &-inverted {
+    background: $whitebg;
+    border: 1px solid $text;
+  }
+}
+
+.tag + .tag {
+  margin-left: .3rem;
+}
+
+.tagBlue, .tagRed, .tagGreen, .tagBlack {
+  color: $white;
+}
+.tagBlue { 
+  background: $blue;
+  &-inverted {
+    background: lighten($blue, 38%);
+    border: 1px solid $blue;
+    color: $blue;
+  }
+}
+.tagRed { 
+  background: $red; 
+  &-inverted {
+    background: lighten($red, 38%);
+    border: 1px solid $red;
+    color: $red;
+  }
+}
+.tagGreen { 
+  background: $green; 
+  &-inverted {
+    background: lighten($green, 45%);
+    border: 1px solid $green;
+    color: $green;
+  }
+}
+.tagBlack { 
+  background: $black; 
+  &-inverted {
+    background: lighten($black, 80%);
+    border: 1px solid $black;
+    color: $black;
+  }
+}
+.tagYellow { 
+  background: $yellow; 
+  &-inverted {
+    background: lighten($yellow, 45%);
+    border: 1px solid $yellow;
+    color: $yellow;
+  }
+}

@@ -1,0 +1,236 @@
+.btn {
+  padding: 1rem;
+  font-family: $fontface, "Helvetica Neue", sans-serif;
+  font-weight: $typeweight;
+  font-size: 1.7rem;
+  letter-spacing: .02em;
+  margin: 0 .5rem 1.5rem;
+  padding: 1.5rem 3rem;
+  cursor: pointer;
+  appearance: none;
+  border: none;
+  border-radius: 2px;
+  background: $border;
+  color: $black;
+  display: inline-flex;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .08);
+  transition: all .5s;
+
+
+  &.is-outlined {
+    padding: 1.5rem 2.9rem;
+  }
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &.is-disabled, &:disabled {
+    cursor: no-drop;
+  }
+
+}
+
+p > .btn {
+  margin-bottom: 0;
+}
+
+.btn.is-blue {
+  background: $blue;
+  color: $white;
+
+  &:hover {
+    background: lighten($blue, 10);
+  }
+
+  &:disabled {
+    background: darken($blue, 10);
+  }
+
+  &.is-outlined {
+    background: none;
+    color: $blue;
+    border: 1px solid $blue;
+
+    &:hover {
+      background: darken($white, 2);
+      border: 1px solid lighten($blue, 10);
+    }
+
+    &:disabled {
+      background: darken($white, 10);
+    }
+  }
+}
+
+.btn.is-black {
+  background: $black;
+  color: $white;
+
+  &:hover {
+    background: lighten($black, 10);
+  }
+
+  &:disabled {
+    background: darken($black, 10);
+  }
+
+  &.is-outlined {
+    background: none;
+    color: $black;
+    border: 1px solid $black;
+
+    &:hover {
+      background: darken($white, 2);
+      border: 1px solid lighten($black, 10);
+    }
+
+    &:disabled {
+      background: darken($white, 10);
+    }
+  }
+}
+
+.btn.is-red {
+  background: $red;
+  color: $white;
+
+  &:hover {
+    background: lighten($red, 10);
+  }
+
+  &:disabled {
+    background: darken($red, 10);
+  }
+
+  &.is-outlined {
+    background: none;
+    color: $red;
+    border: 1px solid $red;
+
+    &:hover {
+      background: darken($white, 2);
+      border: 1px solid lighten($red, 10);
+    }
+
+    &:disabled {
+      background: darken($white, 10);
+    }
+  }
+}
+
+.btn.is-green {
+  background: $green;
+  color: $white;
+
+  &:hover {
+    background: lighten($green, 10);
+  }
+
+  &:disabled {
+    background: darken($green, 10);
+  }
+
+  &.is-outlined {
+    background: none;
+    color: $green;
+    border: 1px solid $green;
+
+    &:hover {
+      background: darken($white, 2);
+      border: 1px solid lighten($green, 10);
+    }
+
+    &:disabled {
+      background: darken($white, 10);
+    }
+  }
+}
+
+.btn.is-yellow {
+  background: $yellow;
+  color: $white;
+
+  &:hover {
+    background: lighten($yellow, 10);
+  }
+
+  &:disabled {
+    background: darken($yellow, 10);
+  }
+
+  &.is-outlined {
+    background: $white;
+    color: $yellow;
+    border: 1px solid $yellow;
+
+    &:hover {
+      background: darken($white, 2);
+      border: 1px solid lighten($yellow, 10);
+    }
+
+    &:disabled {
+      background: darken($white, 10);
+    }
+  }
+}
+
+.btn.is-sand {
+  background: $sand;
+  color: $white;
+
+  &:hover {
+    background: lighten($sand, 10);
+  }
+
+  &:disabled {
+    background: darken($sand, 10);
+  }
+
+  &.is-outlined {
+    background: $white;
+    color: $sand;
+    border: 1px solid $sand;
+
+    &:hover {
+      background: darken($white, 2);
+      border: 1px solid lighten($sand, 10);
+    }
+
+    &:disabled {
+      background: darken($white, 10);
+    }
+  }
+}
+
+.btn.is-purple {
+  background: $purple;
+  color: $white;
+
+  &:hover {
+    background: lighten($purple, 10);
+  }
+
+  &:disabled {
+    background: darken($purple, 10);
+  }
+
+  &.is-outlined {
+    background: $white;
+    color: $purple;
+    border: 1px solid $purple;
+
+    &:hover {
+      background: darken($white, 2);
+      border: 1px solid lighten($purple, 10);
+    }
+
+    &:disabled {
+      background: darken($white, 10);
+    }
+  }
+}

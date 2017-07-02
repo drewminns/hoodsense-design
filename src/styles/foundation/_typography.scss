@@ -1,0 +1,115 @@
+html {
+  font-size: 10px;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $background;
+}
+
+body {
+  @include rem(font-size, $basepx);
+  font-family: $fontface, "Helvetica Neue", sans-serif;
+  font-weight: $typeweight;
+  color: $text;
+  line-height: 2;
+  letter-spacing: .02em;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5 {
+  font-weight:$headingweight;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: .4em;
+  color: $text;
+  letter-spacing: -.01em;
+}
+
+h1, .h1 { @include rem(font-size, 40px); }
+h2, .h2 { @include rem(font-size, 32px); }
+h3, .h3 { @include rem(font-size, 28px); }
+h4, .h4 { @include rem(font-size, 24px); }
+h5, .h5 { @include rem(font-size, 20px); }
+
+.content {
+
+  .section {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid $border;
+  }
+
+  h1 {
+    margin-bottom: 2rem;
+  }
+
+  h2, h3 {
+    margin: 2rem 0;
+  }
+
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+p.lead {
+  font-weight: $typeweight;
+  @include rem(font-size, 21px);
+  margin-bottom: 1rem;
+  color: $black-light;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+
+  &::after {
+    content: '';
+    bottom: 2px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 1px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    transition: all .4s;
+  }
+
+  &:hover {
+    &::after {
+      left: 10%;
+      width: 80%;
+    }
+  }
+}
+
+strong, b {
+  font-weight: 900;
+}
+
+em, i {
+  font-style: oblique;
+}
+
+ul, ol {
+  margin: 2rem 0;
+
+  li {
+    line-height: 1.6;
+  }
+}
+
+.red { color: $red; }
+.blue { color: $blue; }
+.green { color: $green; }
+.yellow { color: $yellow; }
+.purple { color: $purple; }
