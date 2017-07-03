@@ -8,22 +8,49 @@
 
 .body {
   padding: 1.8rem 2.3rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.heading {
+  flex: 3 0 auto;
 }
 
 .title {
-  font-weight: $headingweight;
-  font-size: 1.5rem;
-  margin-bottom: .2em;
+  margin: 0;
+  line-height: 1.5;
 }
 
 .subTitle {
-  font-size: 1rem;
+  // font-size: 1em;
   margin-bottom: .3em;
   margin-top: 0;
   color: $black-light;
+  line-height: 1;
+}
+
+.util {
+  margin-left: 25px;
+  text-align: right;
+}
+
+.utilLink {
+  margin-top: 0;
+  font-size: 1rem;
+  color: $red;
 }
 
 .media {
   background-size: cover;
   display: block;
+  height: 200px;
+}
+
+.copyContainer {
+  padding: 0 2.3rem 1.8rem;
+  width: 100%;
+
+  & > * {
+    margin-top: 0;
+  }
 }

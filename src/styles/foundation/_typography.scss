@@ -4,10 +4,6 @@ html {
 }
 
 body {
-  background-color: $background;
-}
-
-body {
   @include rem(font-size, $basepx);
   font-family: $fontface, "Helvetica Neue", sans-serif;
   font-weight: $typeweight;
@@ -112,4 +108,3 @@ ul, ol {
 .blue { color: $blue; }
 .green { color: $green; }
 .yellow { color: $yellow; }
-.purple { color: $purple; }

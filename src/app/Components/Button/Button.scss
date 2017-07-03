@@ -32,7 +32,7 @@
   margin-left: .3rem;
 }
 
- .btnFull {
+.btnFull {
   display: flex;
   width: 100%;
 }
@@ -41,12 +41,18 @@
   background: $blue;
   border: 1px solid $blue;
   color: $white;
+
   &:hover {
     background: lighten($blue, 10%);
   }
+
   &:disabled {
     background: desaturate($blue, 70%);
     border: 1px solid desaturate($blue, 70%);
+  }
+
+  &.btnOutlined {
+    color: $blue;
   }
 }
 
@@ -54,12 +60,18 @@
   background: $red;
   border: 1px solid $red;
   color: $white;
+
   &:hover {
     background: lighten($red, 10%);
   }
+
   &:disabled {
     background: desaturate($red, 70%);
     border: 1px solid desaturate($red, 70%);
+  }
+
+  &.btnOutlined {
+    color: $red;
   }
 }
 
@@ -67,12 +79,18 @@
   background: $green;
   border: 1px solid $green;
   color: $white;
+
   &:hover {
     background: lighten($green, 3%);
   }
+
   &:disabled {
     background: desaturate($green, 60%);
     border: 1px solid desaturate($green, 60%);
+  }
+
+  &.btnOutlined {
+    color: $green;
   }
 }
 
@@ -80,12 +98,18 @@
   background: $yellow;
   border: 1px solid $yellow;
   color: $white;
+
   &:hover {
     background: lighten($yellow, 10%);
   }
+
   &:disabled {
     background: desaturate($yellow, 70%);
     border: 1px solid desaturate($yellow, 70%);
+  }
+
+  &.btnOutlined {
+    color: $yellow;
   }
 }
 
@@ -93,11 +117,37 @@
   background: $black;
   border: 1px solid $black;
   color: $white;
+
   &:hover {
     background: lighten($black, 10%);
   }
+
   &:disabled {
     background: desaturate($black, 70%);
     border: 1px solid desaturate($black, 70%);
+  }
+
+  &.btnOutlined {
+    color: $black;
+  }
+}
+
+
+.btnOutlined, .btnOutlined:hover {
+  background: none;
+}
+
+
+.asText {
+  border: 0;
+  background: none;
+  color: $link;
+  padding-left: 0;
+  padding-right: 0;
+  min-width: auto;
+
+  &:hover {
+    background: none;
+    color: darken($blue, 20%);
   }
 }

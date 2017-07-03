@@ -99,7 +99,7 @@ module.exports = {
         exclude: '/node_modules/'
       },
       {
-        test: /\.(png|gif|jpg)$/,
+        test: /\.(png|gif|jpg|svg)$/,
         use: ['url-loader?limit=30000&name=images/[hash:12].[ext]'],
         exclude: '/node_modules/'
       },

@@ -43,6 +43,7 @@ module.exports = {
     'plugin:jsx-a11y/strict'
   ],
   rules: {
+    'arrow-parens':    ['warn', 'always'],
     'eol-last':        ['off'],
     'jsx-quotes':      ['warn', 'prefer-single'],
     'no-console':      'error',

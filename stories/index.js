@@ -15,6 +15,12 @@ storiesOf('Button')
     )
   )
   .addWithInfo(
+    'Text Button',
+    () => (
+      <Button asText theme='red' handleClick={ action('Default Button Clicked') }>Hello Text</Button>
+    )
+  )
+  .addWithInfo(
     'Themed Button',
     () => (
       <div>
@@ -24,6 +30,19 @@ storiesOf('Button')
         <Button theme='green'>Green Theme</Button>
         <Button theme='yellow'>Yellow Theme</Button>
         <Button theme='black'>Black Theme</Button>
+      </div>
+    )
+  )
+  .addWithInfo(
+    'Themed Outlined Button',
+    () => (
+      <div>
+        <Button isOutlined>Default Theme</Button>
+        <Button theme='blue' isOutlined>Blue Theme</Button>
+        <Button theme='red' isOutlined>Red Theme</Button>
+        <Button theme='green' isOutlined>Green Theme</Button>
+        <Button theme='yellow' isOutlined>Yellow Theme</Button>
+        <Button theme='black' isOutlined>Black Theme</Button>
       </div>
     )
   )
@@ -86,6 +105,36 @@ storiesOf('Card')
   .addWithInfo(
     'Card Component',
     () => (
-      <Card></Card>
+      <Card
+        title='This is a card title'
+        subTitle='This is a card subtitle'
+      >
+        <p>Hello</p>
+      </Card>
+    )
+  )
+  .addWithInfo(
+    'Card Component with Utility Info',
+    () => (
+      <Card
+        title='This is a card title'
+        subTitle='This is a card subtitle'
+        utilData='Featured'
+      >
+        <p>Hello</p>
+      </Card>
+    )
+  )
+  .addWithInfo(
+    'Card Component with Utility Info Theme',
+    () => (
+      <Card
+        title='This is a card title'
+        subTitle='This is a card subtitle'
+        utilData='Featured'
+        utilTheme='red'
+      >
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere minima ab repellat, blanditiis molestiae exercitationem sequi quisquam quia ipsam maxime, excepturi temporibus saepe atque porro modi illum consequuntur, natus assumenda.</p>
+      </Card>
     )
   )

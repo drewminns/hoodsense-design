@@ -39,6 +39,16 @@ module.exports = {
         ],
         exclude: '/node_modules/'
       },
+      {
+        test: /\.(ttf|eot|woff|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loaders: ['file-loader?name=assets/fonts/[name].[ext]'],
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.(png|gif|jpg|svg)$/,
+        use: ['url-loader?limit=30000&name=images/[hash:12].[ext]'],
+        exclude: '/node_modules/'
+      },
     ],
   },
 };

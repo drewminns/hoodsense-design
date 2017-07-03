@@ -14,23 +14,24 @@ $columns: 12;
 $gutter: 20px;
 $padding: $gutter;
 
-
-$text: #282828;
 $black: #222;
 $black-light: #949494;
 $whitebg: #F5F8FA;
 $white: #fff;
 $background: #DBDBEB;
 $border: #E8E8E8;
-$blue: #592EFD;
-$blue-light: #80C9ED;
-$red: #FC0F45;
-$red-light: #FF7E84;
-$green: #36CF25;
-$turquiose: #1ED0AF;
-$yellow: #FFBA00;
-$yellow-light: #FFDA74;
-$sand: #5D6900;
+$blue: #592efd;
+$blue-light: #80c9ed;
+$red: #fc0c45;
+$red-light: #ff7e84;
+$green: #36cf25;
+$turquiose: #1ed0af;
+$yellow: #ffba00;
+$yellow-light: #ffda74;
+$sand: #5d6900;
 $sand-light: #879239;
 
-$boxShadow:  0 1px 3px 0 rgba(0,0,0,0.2);
+$text: #282828;
+$link: $blue;
+
+$boxShadow:  0 1px 3px 0 rgba(0, 0, 0, 0.2);
